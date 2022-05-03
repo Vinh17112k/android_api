@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 
+
 //@Configuration
 //public class EmailConfig {
 //  @Bean
@@ -25,4 +26,5 @@ import org.springframework.mail.javamail.JavaMailSenderImpl;
 //
 //    return mailSender;
 //  }
+
 //}
