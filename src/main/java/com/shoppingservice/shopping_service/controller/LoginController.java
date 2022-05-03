@@ -63,13 +63,13 @@ public class LoginController {
 	    	
 	    	try {
 				User user = userService.getUserDetailById(_getUserId());
-				HashMap<String,String> response = new HashMap<String,String>();
+				JSONObject response = new JSONObject();
 				response.put("user_id", ""+_getUserId());
 				response.put("email", user.getEmail());
 				response.put("name", user.getName());
 				response.put("mobile", user.getMobile());
+				response.put("type", user.getType());
 				
-			
 				JSONObject obj = new JSONObject();
 				
 				obj.put("user_profile_details",response);
