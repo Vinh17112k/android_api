@@ -41,7 +41,7 @@ public class CartController {
 	@RequestMapping("updateQtyForCart")
   	public ResponseEntity<?> updateQtyForCart(@RequestBody HashMap<String,String> addCartRequest) {
 		try {
-			String keys[] = {"cartId","userId","qty","price"};
+			String keys[] = {"cartId","user Id","qty","price"};
 			if(ShoppingConfiguration.validationWithHashMap(keys, addCartRequest)) {
 				
 			}
